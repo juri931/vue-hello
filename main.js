@@ -6,7 +6,7 @@ createApp({
     return {
       messaggio: "Ciao sono VUE!",
       contatore: 0,
-      img: "https://picsum.photos/200/300",
+      img: "acqua-albero-cielo-451855.jpg",
     };
   },
 
