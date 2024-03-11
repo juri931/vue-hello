@@ -9,17 +9,26 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/style.css">
   <title>Vue hello</title>
 </head>
 <body>
 
   <div id="app" class="container my-3">
     
+    <!-- Text input -->
     <input type="text" v-model="messaggio">
   
+    <!-- Messaggio in data -->
     <h1>{{messaggio}}</h1>
-  
+
+    <!-- Contatore -->
+    <h2>Contatore: {{contatore}}</h2>
+    
+    <button @click="incremento" class="btn btn-primary">Incrementa</button>
+
+    <!-- Immagine -->
+    <img class="container" v-for="img in data" :key="img" :src="(img)" alt="Immagine">{{img}}
+  </img>
   </div>
   
   <script src="main.js"></script>
