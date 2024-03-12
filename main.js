@@ -1,7 +1,6 @@
-const { createApp } = Vue
+const { createApp } = Vue;
 
 createApp({
-
   data() {
     return {
       messaggio: "Ciao sono VUE!",
@@ -11,11 +10,12 @@ createApp({
   },
 
   methods: {
-    incremento(){this.contatore++;}
+    incremento() {
+      this.contatore++;
+    },
   },
 
   mounted() {
     this.incremento();
   },
-  
-}).mount('#app')
+}).mount("#app");
