@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Bootstrap -->
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css' integrity='sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ==' crossorigin='anonymous'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css'
+    integrity='sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ=='
+    crossorigin='anonymous' />
 
-<!-- VUE -->
+  <!-- VUE -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vue hello</title>
 </head>
+
 <body>
 
   <div id="app" class="container my-3">
-    
+
     <!-- Text input -->
     <input type="text" v-model="messaggio">
-  
+
     <!-- Messaggio in data -->
     <h1>{{messaggio}}</h1>
 
     <!-- Contatore -->
     <h2>Contatore: {{contatore}}</h2>
-    
-    <button @click="incremento" class="btn btn-primary">Incrementa</button>
+
+    <button style="display: block;" @click="incremento" class="btn btn-primary my-2">Incrementa</button>
 
     <!-- Immagine -->
-    <img>{{img}}</img>
+    <img style="width: 200px;" :src="img"></img>
   </div>
-  
+
   <script src="main.js"></script>
 </body>
+
 </html>
